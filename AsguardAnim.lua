@@ -1,3 +1,4 @@
+
 local Asguard = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -15,8 +16,10 @@ local Edgy = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local ElioBasio = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
-local RER = Instance.new("TextButton")
+local KrystalDance = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
+local RER = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
 
 Asguard.Name = "Asguard"
 Asguard.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -89,7 +92,7 @@ Updates_2.BackgroundTransparency = 1.000
 Updates_2.Position = UDim2.new(0, 0, 2.18539619, 0)
 Updates_2.Size = UDim2.new(0, 134, 0, 54)
 Updates_2.Font = Enum.Font.SciFi
-Updates_2.Text = "- Added Xester, ElioBasio,EdgyKid"
+Updates_2.Text = "- Added - KrystalDance "
 Updates_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Updates_2.TextScaled = true
 Updates_2.TextSize = 14.000
@@ -151,6 +154,21 @@ ElioBasio.TextWrapped = true
 UICorner_6.CornerRadius = UDim.new(0, 11)
 UICorner_6.Parent = ElioBasio
 
+KrystalDance.Name = "KrystalDance"
+KrystalDance.Parent = ScrollingFrame
+KrystalDance.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+KrystalDance.Position = UDim2.new(0.0653846189, 0, 0.269842446, 0)
+KrystalDance.Size = UDim2.new(0, 225, 0, 35)
+KrystalDance.Font = Enum.Font.SciFi
+KrystalDance.Text = "KrystalDance"
+KrystalDance.TextColor3 = Color3.fromRGB(255, 255, 255)
+KrystalDance.TextScaled = true
+KrystalDance.TextSize = 14.000
+KrystalDance.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0, 11)
+UICorner_7.Parent = KrystalDance
+
 RER.Name = "RE (R)"
 RER.Parent = MainFrame
 RER.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
@@ -163,36 +181,44 @@ RER.TextScaled = true
 RER.TextSize = 14.000
 RER.TextWrapped = true
 
-UICorner_7.CornerRadius = UDim.new(0, 11)
-UICorner_7.Parent = RER
+UICorner_8.CornerRadius = UDim.new(0, 11)
+UICorner_8.Parent = RER
 
 -- Scripts:
 
-local function KQUNJ_fake_script() -- Xester.LocalScript 
+local function CTONKP_fake_script() -- Xester.LocalScript 
 	local script = Instance.new('LocalScript', Xester)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		loadstring(game:HttpGetAsync("https://pastebin.com/raw/RPwyPvEi"))()
 	end)
 end
-coroutine.wrap(KQUNJ_fake_script)()
-local function VSALI_fake_script() -- Edgy.LocalScript 
+coroutine.wrap(CTONKP_fake_script)()
+local function QJFRZ_fake_script() -- Edgy.LocalScript 
 	local script = Instance.new('LocalScript', Edgy)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		loadstring(game:HttpGetAsync("https://pastebin.com/raw/jfryBKds"))()
 	end)
 end
-coroutine.wrap(VSALI_fake_script)()
-local function IYTUAKC_fake_script() -- ElioBasio.LocalScript 
+coroutine.wrap(QJFRZ_fake_script)()
+local function MPQTLCM_fake_script() -- ElioBasio.LocalScript 
 	local script = Instance.new('LocalScript', ElioBasio)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		loadstring(game:HttpGetAsync("https://pastebin.com/raw/xvBXu6Yc"))()
 	end)
 end
-coroutine.wrap(IYTUAKC_fake_script)()
-local function LNGI_fake_script() -- MainFrame.Dragify 
+coroutine.wrap(MPQTLCM_fake_script)()
+local function QHLNNC_fake_script() -- KrystalDance.LocalScript 
+	local script = Instance.new('LocalScript', KrystalDance)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/M7uWir8h"))()
+	end)
+end
+coroutine.wrap(QHLNNC_fake_script)()
+local function DZQVQHW_fake_script() -- MainFrame.Dragify 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local UIS = game:GetService("UserInputService")
@@ -233,8 +259,8 @@ local function LNGI_fake_script() -- MainFrame.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(LNGI_fake_script)()
-local function EMWOG_fake_script() -- MainFrame.LocalScript 
+coroutine.wrap(DZQVQHW_fake_script)()
+local function PQUA_fake_script() -- MainFrame.LocalScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	function onKeyPress(actionName, userInputState, inputObject)
@@ -245,4 +271,4 @@ local function EMWOG_fake_script() -- MainFrame.LocalScript
 	
 	game.ContextActionService:BindAction("keyPress", onKeyPress, false, Enum.KeyCode.R)
 end
-coroutine.wrap(EMWOG_fake_script)()
+coroutine.wrap(PQUA_fake_script)()
