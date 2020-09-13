@@ -1,5 +1,5 @@
 local Asguard = Instance.new("ScreenGui")
-local MainFrame = Instance.new("Frame")
+local SecondFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local TopBar = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
@@ -13,32 +13,34 @@ local Xester = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local ElioBasio = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local KrystalDance = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
 local ChillVibe = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
 local Edgy = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local KrystalDance = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
 local RER = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
+local Rejoin = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
 
 Asguard.Name = "Asguard"
 Asguard.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Asguard.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Asguard.ResetOnSpawn = false
 
-MainFrame.Name = "MainFrame"
-MainFrame.Parent = Asguard
-MainFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0.439440995, 0, 0.475429982, 0)
-MainFrame.Size = UDim2.new(0, 494, 0, 339)
+SecondFrame.Name = "SecondFrame"
+SecondFrame.Parent = Asguard
+SecondFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+SecondFrame.BorderSizePixel = 0
+SecondFrame.Position = UDim2.new(0.439440995, 0, 0.475429982, 0)
+SecondFrame.Size = UDim2.new(0, 494, 0, 339)
 
 UICorner.CornerRadius = UDim.new(0, 11)
-UICorner.Parent = MainFrame
+UICorner.Parent = SecondFrame
 
 TopBar.Name = "TopBar"
-TopBar.Parent = MainFrame
+TopBar.Parent = SecondFrame
 TopBar.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 TopBar.BorderSizePixel = 0
 TopBar.Position = UDim2.new(0, 0, -0.00106478436, 0)
@@ -52,9 +54,9 @@ Title.Parent = TopBar
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title.BackgroundTransparency = 1.000
 Title.Position = UDim2.new(0, 0, 0.00892549381, 0)
-Title.Size = UDim2.new(0, 494, 0, 33)
+Title.Size = UDim2.new(0, 324, 0, 33)
 Title.Font = Enum.Font.SciFi
-Title.Text = "Asguard"
+Title.Text = "Asguard Menu"
 Title.TextColor3 = Color3.fromRGB(255, 0, 132)
 Title.TextScaled = true
 Title.TextSize = 14.000
@@ -99,12 +101,13 @@ Updates_2.TextScaled = true
 Updates_2.TextSize = 14.000
 Updates_2.TextWrapped = true
 
-ScrollingFrame.Parent = MainFrame
+ScrollingFrame.Parent = SecondFrame
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0.446082443, 0, 0.141217172, 0)
 ScrollingFrame.Size = UDim2.new(0, 260, 0, 209)
+ScrollingFrame.CanvasPosition = Vector2.new(0, 19)
 ScrollingFrame.ScrollBarThickness = 15
 
 UICorner_3.CornerRadius = UDim.new(0, 11)
@@ -140,21 +143,6 @@ ElioBasio.TextWrapped = true
 UICorner_5.CornerRadius = UDim.new(0, 11)
 UICorner_5.Parent = ElioBasio
 
-KrystalDance.Name = "KrystalDance"
-KrystalDance.Parent = ScrollingFrame
-KrystalDance.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-KrystalDance.Position = UDim2.new(0.0653846189, 0, 0.238868997, 0)
-KrystalDance.Size = UDim2.new(0, 225, 0, 35)
-KrystalDance.Font = Enum.Font.SciFi
-KrystalDance.Text = "KrystalDance"
-KrystalDance.TextColor3 = Color3.fromRGB(255, 255, 255)
-KrystalDance.TextScaled = true
-KrystalDance.TextSize = 14.000
-KrystalDance.TextWrapped = true
-
-UICorner_6.CornerRadius = UDim.new(0, 11)
-UICorner_6.Parent = KrystalDance
-
 ChillVibe.Name = "Chill Vibe"
 ChillVibe.Parent = ScrollingFrame
 ChillVibe.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
@@ -167,8 +155,8 @@ ChillVibe.TextScaled = true
 ChillVibe.TextSize = 14.000
 ChillVibe.TextWrapped = true
 
-UICorner_7.CornerRadius = UDim.new(0, 11)
-UICorner_7.Parent = ChillVibe
+UICorner_6.CornerRadius = UDim.new(0, 11)
+UICorner_6.Parent = ChillVibe
 
 Edgy.Name = "Edgy"
 Edgy.Parent = ScrollingFrame
@@ -182,17 +170,32 @@ Edgy.TextScaled = true
 Edgy.TextSize = 14.000
 Edgy.TextWrapped = true
 
+UICorner_7.CornerRadius = UDim.new(0, 11)
+UICorner_7.Parent = Edgy
+
+KrystalDance.Name = "KrystalDance"
+KrystalDance.Parent = ScrollingFrame
+KrystalDance.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+KrystalDance.Position = UDim2.new(0.0653846189, 0, 0.238868997, 0)
+KrystalDance.Size = UDim2.new(0, 225, 0, 35)
+KrystalDance.Font = Enum.Font.SciFi
+KrystalDance.Text = "KrystalDance"
+KrystalDance.TextColor3 = Color3.fromRGB(255, 255, 255)
+KrystalDance.TextScaled = true
+KrystalDance.TextSize = 14.000
+KrystalDance.TextWrapped = true
+
 UICorner_8.CornerRadius = UDim.new(0, 11)
-UICorner_8.Parent = Edgy
+UICorner_8.Parent = KrystalDance
 
 RER.Name = "RE (R)"
-RER.Parent = MainFrame
-RER.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-RER.Position = UDim2.new(0.807155609, 0, 0.806358516, 0)
-RER.Size = UDim2.new(0, 73, 0, 35)
+RER.Parent = SecondFrame
+RER.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+RER.Position = UDim2.new(0.65735805, 0, -0.00106478436, 0)
+RER.Size = UDim2.new(0, 73, 0, 33)
 RER.Font = Enum.Font.SciFi
 RER.Text = "RE (R)"
-RER.TextColor3 = Color3.fromRGB(255, 255, 255)
+RER.TextColor3 = Color3.fromRGB(255, 0, 132)
 RER.TextScaled = true
 RER.TextSize = 14.000
 RER.TextWrapped = true
@@ -200,50 +203,65 @@ RER.TextWrapped = true
 UICorner_9.CornerRadius = UDim.new(0, 11)
 UICorner_9.Parent = RER
 
+Rejoin.Name = "Rejoin"
+Rejoin.Parent = SecondFrame
+Rejoin.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Rejoin.Position = UDim2.new(0.806406379, 0, 0, 0)
+Rejoin.Size = UDim2.new(0, 88, 0, 32)
+Rejoin.Font = Enum.Font.SciFi
+Rejoin.Text = "Rejoin"
+Rejoin.TextColor3 = Color3.fromRGB(255, 0, 132)
+Rejoin.TextScaled = true
+Rejoin.TextSize = 14.000
+Rejoin.TextWrapped = true
+
+UICorner_10.CornerRadius = UDim.new(0, 11)
+UICorner_10.Parent = Rejoin
+
 -- Scripts:
 
-local function ETPDH_fake_script() -- Xester.LocalScript 
+local function XWBYST_fake_script() -- Xester.LocalScript 
 	local script = Instance.new('LocalScript', Xester)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		loadstring(game:HttpGetAsync("https://pastebin.com/raw/RPwyPvEi"))()
 	end)
 end
-coroutine.wrap(ETPDH_fake_script)()
-local function SEHQHQ_fake_script() -- ElioBasio.LocalScript 
+coroutine.wrap(XWBYST_fake_script)()
+local function DXOGEQM_fake_script() -- ElioBasio.LocalScript 
 	local script = Instance.new('LocalScript', ElioBasio)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		loadstring(game:HttpGetAsync("https://pastebin.com/raw/xvBXu6Yc"))()
 	end)
 end
-coroutine.wrap(SEHQHQ_fake_script)()
-local function MWRCLQ_fake_script() -- KrystalDance.LocalScript 
-	local script = Instance.new('LocalScript', KrystalDance)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		loadstring(game:HttpGetAsync("https://pastebin.com/raw/M7uWir8h"))()
-	end)
-end
-coroutine.wrap(MWRCLQ_fake_script)()
-local function VXMMHKP_fake_script() -- ChillVibe.LocalScript 
+coroutine.wrap(DXOGEQM_fake_script)()
+local function VAVPQUR_fake_script() -- ChillVibe.LocalScript 
 	local script = Instance.new('LocalScript', ChillVibe)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		loadstring(game:HttpGetAsync("https://pastebin.com/raw/XmHFdTij"))()
 	end)
 end
-coroutine.wrap(VXMMHKP_fake_script)()
-local function PHLXI_fake_script() -- Edgy.LocalScript 
+coroutine.wrap(VAVPQUR_fake_script)()
+local function UMBG_fake_script() -- Edgy.LocalScript 
 	local script = Instance.new('LocalScript', Edgy)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		loadstring(game:HttpGetAsync("https://pastebin.com/raw/jfryBKds"))()
 	end)
 end
-coroutine.wrap(PHLXI_fake_script)()
-local function SOXWU_fake_script() -- MainFrame.Dragify 
-	local script = Instance.new('LocalScript', MainFrame)
+coroutine.wrap(UMBG_fake_script)()
+local function USJNA_fake_script() -- KrystalDance.LocalScript 
+	local script = Instance.new('LocalScript', KrystalDance)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/M7uWir8h"))()
+	end)
+end
+coroutine.wrap(USJNA_fake_script)()
+local function JFUD_fake_script() -- SecondFrame.Dragify 
+	local script = Instance.new('LocalScript', SecondFrame)
 
 	local UIS = game:GetService("UserInputService")
 	function dragify(Frame)
@@ -283,9 +301,9 @@ local function SOXWU_fake_script() -- MainFrame.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(SOXWU_fake_script)()
-local function LJKQP_fake_script() -- MainFrame.LocalScript 
-	local script = Instance.new('LocalScript', MainFrame)
+coroutine.wrap(JFUD_fake_script)()
+local function OWOUEK_fake_script() -- SecondFrame.Reset 
+	local script = Instance.new('LocalScript', SecondFrame)
 
 	function onKeyPress(actionName, userInputState, inputObject)
 		if userInputState == Enum.UserInputState.Begin then
@@ -295,4 +313,26 @@ local function LJKQP_fake_script() -- MainFrame.LocalScript
 	
 	game.ContextActionService:BindAction("keyPress", onKeyPress, false, Enum.KeyCode.R)
 end
-coroutine.wrap(LJKQP_fake_script)()
+coroutine.wrap(OWOUEK_fake_script)()
+local function BZSSTVL_fake_script() -- Rejoin.LocalScript 
+	local script = Instance.new('LocalScript', Rejoin)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, Player)
+	end)
+end
+coroutine.wrap(BZSSTVL_fake_script)()
+local function CIMG_fake_script() -- SecondFrame.AntiLimbFall 
+	local script = Instance.new('LocalScript', SecondFrame)
+
+	print("AntiLimb Loading..")
+	
+	wait(5)
+	loadstring(game:HttpGet('https://pastebin.com/raw/C7qwk8VK'))();
+	
+	print("AntiLimb Loaded!")
+	
+	
+	
+end
+coroutine.wrap(CIMG_fake_script)()
