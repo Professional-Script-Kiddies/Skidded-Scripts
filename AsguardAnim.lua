@@ -1,3 +1,13 @@
+--[[
+NOT WORKING | NOT WORKING | NOT WORKING | NOT WORKING | NOT WORKING | NOT WORKING | NOT WORKING | NOT WORKING | NOT WORKING | NOT WORKING | NOT WORKING | NOT WORKING | 
+
+I am no longer updating this you may skid the UI
+
+By Lx16#3084
+
+NOT WORKING | NOT WORKING | NOT WORKING | NOT WORKING | NOT WORKING | NOT WORKING | NOT WORKING | NOT WORKING | NOT WORKING | NOT WORKING | NOT WORKING | NOT WORKING | 
+]]--
+
 local Asguard = Instance.new("ScreenGui")
 local SecondFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -224,7 +234,7 @@ local function XWBYST_fake_script() -- Xester.LocalScript
 	local script = Instance.new('LocalScript', Xester)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		loadstring(game:HttpGetAsync("https://pastebin.com/raw/RPwyPvEi"))()
+
 	end)
 end
 coroutine.wrap(XWBYST_fake_script)()
@@ -232,7 +242,7 @@ local function DXOGEQM_fake_script() -- ElioBasio.LocalScript
 	local script = Instance.new('LocalScript', ElioBasio)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		loadstring(game:HttpGetAsync("https://pastebin.com/raw/xvBXu6Yc"))()
+
 	end)
 end
 coroutine.wrap(DXOGEQM_fake_script)()
@@ -240,7 +250,7 @@ local function VAVPQUR_fake_script() -- ChillVibe.LocalScript
 	local script = Instance.new('LocalScript', ChillVibe)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		loadstring(game:HttpGetAsync("https://pastebin.com/raw/XmHFdTij"))()
+
 	end)
 end
 coroutine.wrap(VAVPQUR_fake_script)()
@@ -248,7 +258,7 @@ local function UMBG_fake_script() -- Edgy.LocalScript
 	local script = Instance.new('LocalScript', Edgy)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		loadstring(game:HttpGetAsync("https://pastebin.com/raw/jfryBKds"))()
+
 	end)
 end
 coroutine.wrap(UMBG_fake_script)()
@@ -256,7 +266,7 @@ local function USJNA_fake_script() -- KrystalDance.LocalScript
 	local script = Instance.new('LocalScript', KrystalDance)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		loadstring(game:HttpGetAsync("https://pastebin.com/raw/M7uWir8h"))()
+
 	end)
 end
 coroutine.wrap(USJNA_fake_script)()
