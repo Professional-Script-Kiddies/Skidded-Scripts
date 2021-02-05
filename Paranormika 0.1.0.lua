@@ -1,6 +1,9 @@
 
 --[[
 For Game Paranormica ALPHA 0.5.1+
+ive lost the file for this so a V2 will be made VERY soon,
+you may crack this it is a ironbrew fork.
+GhostESP, ThirdP Are Broken
 (Still Working 2021)
 Made By Lx16#3084
 ]]--
