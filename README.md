@@ -1,2 +1,4 @@
-# Scripts
-I'll just upload random dump scripts I make here since its free to upload. I'm still supprised some of these work lmao SKV2 still works like its 2020 
+# Roblox Scripts
+
+All audio related scripts are from I used to play dollhouse, they are from a hub I was working on (AresHub) 
+Since then i've quit roblox and will nolonger be working on any of these feel free to skid..
