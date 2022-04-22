@@ -1,5 +1,12 @@
--- yeah uh pretty bad, i hate doing anything with network ownership
+local SONGID = 123456789
+
+local a = game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').Position
+local char = game:GetService("Players").LocalPlayer.Character
+
+char.HumanoidRootPart.CFrame = CFrame.new(5453, 2919, -16824)
+char.Head.Anchored = true
 game.Players.LocalPlayer.Character:FindFirstChild("Animate"):FindFirstChild("toolnone"):FindFirstChild("ToolNoneAnim").AnimationId = "nil"		
+
 for _, tool in ipairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
     if tool:IsA("Tool") then
          tool.Parent = game:GetService("Players").LocalPlayer.Character
@@ -14,12 +21,14 @@ for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants
     end
 end
 
-sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
-sethiddenproperty(game.Players.LocalPlayer, "MaximumSimulationRadius", math.huge)
-
+game:GetService("RunService").RenderStepped:Connect(function()
+   sethiddenproperty(game:GetService("Players").LocalPlayer, "SimulationRadius", math.huge)
+end)
 
 local tool = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Tool"):FindFirstChild("Handle");
 local plr = game:GetService("Players").LocalPlayer;
+
+wait(1)
 
 function Vis()
 	local bg = Instance.new("BodyGyro", tool)
@@ -29,19 +38,20 @@ function Vis()
 	bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
 	local bp = Instance.new("BodyPosition", tool)
 	bp.maxForce = Vector3.new(9e9, 9e9, 9e9)
+	
 game:GetService("RunService").Heartbeat:connect(function()
     bg.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
     bp.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
-    bp.Position = CFrame.new(0, 5, 0)
 end)
 
-	pcall(function()
-		for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do 
-			if v.Name:find("Grip") or v.Name:find("grip") and v.Parent.Name:find("Right") then 
-				v:Destroy()
-			end 
+for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do 
+		if v.Name:find("Grip") or v.Name:find("grip") and v.Parent.Name:find("Right") then 
+			v:Destroy()
 		end 
-	end)
+	end 
 end
 
 Vis()
+wait(1)
+char.Head.Anchored = false
+game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(a)
