@@ -1,5 +1,3 @@
--- Patches (most) fling exploits use noclip with though
-
 local Services = setmetatable({}, {__index = function(Self, Index)
 local NewService = game.GetService(game, Index)
 
@@ -30,13 +28,6 @@ local function PlayerAdded(Player)
    Services.RunService.Heartbeat:Connect(function()
        if (Character and Character:IsDescendantOf(workspace)) and (PrimaryPart and PrimaryPart:IsDescendantOf(Character)) then
            if PrimaryPart.AssemblyAngularVelocity.Magnitude > 50 or PrimaryPart.AssemblyLinearVelocity.Magnitude > 100 then
-               if Detected == false then
-                   game.StarterGui:SetCore("ChatMakeSystemMessage", {
-                       Text = "Player may be fling exploiting: " .. tostring(Player);
-                       Color = Color3.fromRGB(0, 255, 0);
-                   })
-               end
-               Detected = true
                for i,v in ipairs(Character:GetDescendants()) do
                    if v:IsA("BasePart") then
                        v.CanCollide = false
@@ -70,11 +61,6 @@ Services.RunService.Heartbeat:Connect(function()
            PrimaryPart.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
            PrimaryPart.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
            PrimaryPart.CFrame = LastPosition
-
-           game.StarterGui:SetCore("ChatMakeSystemMessage", {
-               Text = "You were flung. Attemping to fix Velocity";
-               Color = Color3.fromRGB(255, 0, 0);
-           })
        elseif PrimaryPart.AssemblyLinearVelocity.Magnitude < 50 or PrimaryPart.AssemblyAngularVelocity.Magnitude > 50 then
            LastPosition = PrimaryPart.CFrame
        end
